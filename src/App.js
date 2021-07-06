@@ -1,10 +1,10 @@
 import "./App.css";
-//import history from "./history";
+import history from "./history";
 import Button from "./Components/Buttons";
 import React from "react";
 import Wrapper from "./Components/Wrapper";
 import image from "./theJarBar.png";
-import Message from "./Components/Message/";
+import Message from "./Components/Message";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
               type="button"
               buttonStyle="btn--solid--solid"
               buttonSize="btn-small"
-              //onClick={() => history.push("/login")}
+              onClick={() => history.push("/login")}
             >
               Login
             </Button>
@@ -28,7 +28,7 @@ function App() {
               type="button"
               buttonStyle="btn--rank--solid"
               buttonSize="btn-small"
-              //onClick={() => history.push("/signup")}
+              onClick={() => history.push("/signup")}
             >
               Sign Up
             </Button>
